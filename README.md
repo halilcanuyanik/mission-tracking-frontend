@@ -100,7 +100,7 @@ npm start
 
 ```bash
 cd mission-tracking-backend/
-node server.js
+node index.js
 ```
 
 ## 📌 Usage

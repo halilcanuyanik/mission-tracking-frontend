@@ -1,0 +1,148 @@
+.formContainer {
+  max-width: 600px;
+  margin: 24px auto 30px;
+  padding: 25px;
+  border-radius: 8px;
+  background-color: #f8f9fa;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.formTitle {
+  color: #2c3e50;
+  text-align: center;
+  margin-bottom: 25px;
+  font-size: 24px;
+  font-weight: 600;
+}
+
+.formGroup {
+  margin-bottom: 20px;
+}
+
+.formLabel {
+  display: block;
+  margin-bottom: 8px;
+  font-weight: 500;
+  color: #495057;
+}
+
+.formSelect,
+.formInput {
+  width: 100%;
+  padding: 10px 12px;
+  border: 1px solid #ced4da;
+  border-radius: 4px;
+  font-size: 16px;
+  transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+}
+
+.formSelect:focus,
+.formInput:focus {
+  border-color: #80bdff;
+  outline: 0;
+  box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.25);
+}
+
+.formSelect[multiple] {
+  height: auto;
+  min-height: 120px;
+  padding: 8px;
+}
+
+.formSelect[multiple] option {
+  padding: 8px 12px;
+  margin: 2px 0;
+  border-radius: 3px;
+}
+
+.formSelect[multiple] option:hover {
+  background-color: #e9ecef;
+}
+
+.formButton {
+  display: block;
+  width: 100%;
+  padding: 12px;
+  background-color: #28a745;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  font-size: 16px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: background-color 0.15s ease-in-out;
+}
+
+.formButton:hover {
+  background-color: #218838;
+}
+
+.formButton:active {
+  background-color: #1e7e34;
+}
+
+.hintText {
+  font-size: 13px;
+  color: #6c757d;
+  margin-top: 4px;
+  font-style: italic;
+}
+
+@media (max-width: 768px) {
+  .formContainer {
+    padding: 15px;
+  }
+
+  .formTitle {
+    font-size: 20px;
+  }
+}
+
+.checkboxContainer {
+  max-height: 150px;
+  overflow-y: auto;
+  border: 1px solid #ccc;
+  padding: 10px;
+  border-radius: 6px;
+  background: #f9f9f9;
+}
+
+.engineerCheckbox {
+  display: block;
+  margin-bottom: 6px;
+  cursor: pointer;
+}
+
+.selectedEngineers {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-top: 10px;
+}
+
+.engineerChip {
+  background: #007bff;
+  color: white;
+  padding: 6px 10px;
+  border-radius: 20px;
+  display: flex;
+  align-items: center;
+  font-size: 14px;
+  cursor: default;
+}
+
+.chipClose {
+  margin-left: 8px;
+  background: white;
+  color: #007bff;
+  border-radius: 50%;
+  padding: 0 6px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+
+.chipClose:hover {
+  background: #ffc0c0;
+}
